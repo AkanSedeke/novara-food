@@ -131,7 +131,60 @@ a:hover {
   }
     
 /* Top Wrapper Style End */
+/* Feature Recipe Style Start */
+.parent {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #213032;
+}
+.parent h2 {
+  color: #edffef;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.box {
+  background:none;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+ }
+ .box-wrapper .box .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+ }
+ .box-wrapper .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #edffef;
+  color: #182f32;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+ }
+  .box-wrapper .box:hover .content {
+  opacity: 1;
+ }
+
+/* Feature Recipe Style End */
 @media (min-width: 800px) {
   /* Navigation Style Start */
     #mainnav ul {
