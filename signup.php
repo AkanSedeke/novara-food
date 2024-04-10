@@ -1,5 +1,5 @@
 <?php 
-  include('./serverfiles/app.php');
+  include('./serverfiles/auth.php')
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +19,9 @@
     <!-- End Navigation -->
     <div class="bg-wrapper">
         <div class="auth-container">
+            <?php
+                include('import/message.php')
+            ?>
             <form class="form-container" method="POST">
                 <h1 class="form-header">Sign up</h1>
                 <input 

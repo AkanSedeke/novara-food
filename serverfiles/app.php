@@ -1,4 +1,6 @@
 <?php 
+    session_start();
+    
     define('DB_HOST', 'localhost');
     define('DB_USER', 'mayowa');
     define('DB_PASSWORD', 'password');
@@ -16,6 +18,13 @@
 
     function validateInput($dbconn, $input) {
         return mysqli_real_escape_string($dbconn, $input);
+    }
+
+    function redirect($message, $page) {
+        $redirectTo = SITE_URL.$page;
+        $_SESSION['message'] = "$message";
+        header("Location: $redirectTo");
+        exit(0);
     }
 ?> 
 
