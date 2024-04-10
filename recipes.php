@@ -1,3 +1,6 @@
+<?php 
+  include('./serverfiles/app.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +12,10 @@
 <body>
         <!-- Start Navigation  -->
         <?php 
-          include('./import/navbar.php')  
+          include('import/navbar.php')  
         ?>
-          <!-- End Navigation-->
+
+        <!-- End Navigation -->
        	  <!--Search bar-->
            <div class="search-wrapper">
             <div class="search-container">

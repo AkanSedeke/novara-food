@@ -1,16 +1,18 @@
+<?php 
+  include('./serverfiles/app.php');
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Novara FOOD_PLANET Registration</title>
     <link rel="stylesheet" href="./media/css/index.css" />
-    
     <link rel="stylesheet" href="./media/css/signup.css" />
   </head>
 
   <body>
       <!-- Start Navigation  -->
       <?php 
-        include('./import/navbar.php')  
+        include('import/navbar.php')  
       ?>
       <!-- End Navigation-->
       <!--Login Section-->
