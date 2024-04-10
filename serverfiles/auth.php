@@ -32,6 +32,13 @@
     }
 
     $login = new AdminController;
+    if (isset($_POST['logout-btn'])) {
+        // $checkLoggedOut = $login->logout();
+        redirect("I got here", "about-us.php");
+        if ($checkLoggedOut) {
+            redirect("Logged Out Successfully", "login.php");
+        }
+    }
 
     if (isset($_POST['login-btn'])) {
         $email = validateInput($db->conn, $_POST['email']);

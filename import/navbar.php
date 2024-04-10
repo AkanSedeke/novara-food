@@ -12,8 +12,12 @@
 
             <?php if(isset($_SESSION['authenticated']))  : ?>
 
-            <li class="active"><a href="<?= base_url("signup.php") ?>">Add Recipe</a></li>
-            <li class="active"><a href="<?= base_url("login.php") ?>">Log Out</a></li>
+            <li class="active"><a href="<?= base_url("addrecipe.php") ?>">Add Recipe</a></li>
+            <li class="active">
+            <form action="" method="POST">
+                <button type="submit" name="logout-btn">Log Out</button>
+            </form>
+            </li>
             <?php else :?>
                 <li class="active"><a href="<?= base_url("signup.php") ?>">Sign up</a></li>
                 <li class="active"><a href="<?= base_url("login.php") ?>">Log In</a></li>
