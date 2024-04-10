@@ -1,5 +1,6 @@
 <?php 
-  include('./serverfiles/app.php');
+  include('./serverfiles/auth.php');
+  $login->isLoggedIn();
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,26 +19,27 @@
       <!--Login Section-->
       <div class="bg-wrapper">
         <div class="auth-container">
-            <div class="form-container">
-                <h1 class="form-header">Sign up</h1>
+            <?php
+                include('import/message.php')
+            ?>
+            <form class="form-container" method="POST">
+                <h1 class="form-header">Log In</h1>
                 <input 
                     type="text"
                     class="input"
-                    id='signup-email'
                     name="email"
                     placeholder="Email" />
                 <input 
                     type="password"
                     class="input"
-                    id='signup-password'
                     name="password"
                     placeholder="Password" />
                 <button
                     type="submit"
-                    onClick='signupInputHandler()'
+                    name="login-btn"
                     class="form-button"
                 >Login</button>
-            </div>
+            </form>
 
             <div class="auth-nav">
                 Don't have an account?

@@ -34,6 +34,36 @@
             }
         }
     }
+
+    public function adminLogin($email, $password) {
+        echo $password;
+        $checkLogin = "SELECT * FROM admins WHERE email='$email' AND `password`='$password' LIMIT 1";
+        $result = $this->conn->query($checkLogin);
+        if ($result->num_rows > 0) {
+            $data = $result->fetch_assoc();
+            $this->adminAuthentication($data);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function adminAuthentication($data) {
+        $_SESSION['authenticated'] = true;
+        $_SESSION['auth_user'] = [
+            'user_id' => $data['admin_id'],
+            'fullname' => $data['fullname'],
+            'user_role' => 'admin'
+        ]; 
+    }
+
+    public function isLoggedIn () {
+        if(isset($_SESSION['authenticated']) === TRUE) {
+            redirect('You are already Logged IN', 'index.php');
+        } else {
+            return false;
+        }
+    }
   }
 
 ?>

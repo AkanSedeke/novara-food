@@ -1,5 +1,6 @@
 <?php 
-  include('./serverfiles/auth.php')
+  include('./serverfiles/auth.php');
+  $login->isLoggedIn();
 ?>
 <!DOCTYPE html>
 <html>
