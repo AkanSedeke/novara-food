@@ -2,12 +2,10 @@
     session_start();
     
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'mayowa');
+    define('DB_USER', 'akan');
     define('DB_PASSWORD', 'password');
     define('DB_DATABASE', 'novara_food_db');
-
-    // http://localhost/novara-food
-    define('SITE_URL', 'http://localhost:3000/');
+    define('SITE_URL', 'http://localhost/novara-food/');
     include_once('serverfiles/db.php');
     $db = new DatabaseConnection();
 
