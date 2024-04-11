@@ -14,7 +14,7 @@
 
             <li class="active"><a href="<?= base_url("addrecipe.php") ?>">Add Recipe</a></li>
             <li class="active">
-            <form action="" method="POST">
+            <form method="POST">
                 <button type="submit" name="logout-btn">Log Out</button>
             </form>
             </li>

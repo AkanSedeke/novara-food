@@ -1,6 +1,13 @@
 <?php 
-    // include('serverfiles/app.php');
     include_once('./controllers/admin.php');
+    $login = new AdminController;
+    if (isset($_POST['logout-btn'])) {
+        // $checkLoggedOut = $login->logout();
+        redirect("I got here", "about-us.php");
+        if ($checkLoggedOut) {
+            redirect("Logged Out Successfully", "login.php");
+        }
+    }
 
     if(isset($_POST['register-btn'])) {
         $fullname = validateInput($db->conn, $_POST['fullname']);
@@ -31,15 +38,7 @@
     
     }
 
-    $login = new AdminController;
-    if (isset($_POST['logout-btn'])) {
-        // $checkLoggedOut = $login->logout();
-        redirect("I got here", "about-us.php");
-        if ($checkLoggedOut) {
-            redirect("Logged Out Successfully", "login.php");
-        }
-    }
-
+  
     if (isset($_POST['login-btn'])) {
         $email = validateInput($db->conn, $_POST['email']);
         $password = validateInput($db->conn, $_POST['password']);
