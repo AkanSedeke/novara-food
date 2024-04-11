@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./media/css/index.css">
+    <link rel="stylesheet" href="media/css/index.css">
     <title> All Recipes </title>
 </head>
 <body>
@@ -34,25 +34,25 @@
         <div class="box-wrapper">
           <div class="box" id="one">
             <div class="img-wrapper">
-                <img src="/media/images/Nigeria-meat-pie-Pic3.png" alt="">
+                <img src="media/images/Nigeria-meat-pie-Pic3.png" alt="">
             </div>
             <p class="content"><a href="./recipe.html">Black Eyed Beans Salad</a></p>
           </div>
           <div class="box" id="two">
             <div class="img-wrapper" >
-                <img src="/media/images/Nigerian-okro-sou-Pic2.jpg" alt="error image">
+                <img src="media/images/Nigerian-okro-sou-Pic2.jpg" alt="error image">
             </div>
             <p class="content"><a href="./recipe.html">Nigeria Okro Soup</a></p>
           </div>
           <div class="box" id="three">
             <div class="img-wrapper">
-                  <img src="/media/images/Roast-gizzard-with-peanuts-Pic1.png" alt=""> 
+                  <img src="media/images/Roast-gizzard-with-peanuts-Pic1.png" alt=""> 
             </div>
             <p class="content"><a href="./recipe.html">Roasted Gizzard</a></p>
           </div>
           <div class="box" id="four">
             <div class="img-wrapper">
-                <img src="/media/images/Fry-fish-Pic2.png" alt="">  
+                <img src="media/images/Fry-fish-Pic2.png" alt="">  
             </div>
             <p class="content"><a href="./recipe.html">Fried Fish</a></p>
           </div>
